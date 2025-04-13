@@ -22,9 +22,24 @@
     <main>
         <h2>Welcome to Sure Bets!</h2>
         <p>Your spot for sharp football betting tips. From EPL to local matches, get the best Man U predictions and more. Bet responsibly!</p>
+        <h3>Latest Tips</h3>
+        <div id="tips-list"></div>
     </main>
     <footer>
         <p>© 2025 Sure Bets. Gamble responsibly, 18+ only. Follow <a href="https://x.com/jacobochino147">@jacobochino147</a></p>
     </footer>
+    <script>
+        fetch('tips.txt')
+            .then(response => response.text())
+            .then(data => {
+                const tips = data.split('\n').filter(tip => tip.trim() !== '');
+                const tipsList = document.getElementById('tips-list');
+                tips.forEach(tip => {
+                    const p = document.createElement('p');
+                    p.textContent = tip;
+                    tipsList.appendChild(p);
+                });
+            });
+    </script>
 </body>
 </html>
