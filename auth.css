@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+nav {
+    margin: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+main {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+h2 {
+    color: red;
+    font-size: 1.5em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin: 10px 0 5px;
+    font-size: 1em;
+}
+input {
+    padding: 8px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkred;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: red;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+    main {
+        padding: 10px;
+        max-width: 100%;
+    }
+    input, button {
+        font-size: 0.9em;
+    }
+}
