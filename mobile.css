@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+nav a {
+    color: white;
+    margin: 5px;
+    display: block;
+    text-decoration: none;
+}
+main {
+    padding: 10px;
+    max-width: 100%;
+}
+h2, h3 {
+    color: red;
+    font-size: 1.2em;
+}
+p {
+    margin: 10px 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+a[href*="x.com"] {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: red;
+}
