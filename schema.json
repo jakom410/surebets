@@ -1,0 +1,26 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "name": "Sure Bets",
+    "url": "https://jakom410.github.io/surebets",
+    "description": "Sure Bets offers free football betting tips for EPL, Man U, and local matches, shared by Jacob from Siaya, Kenya.",
+    "publisher": {
+        "@type": "Person",
+        "name": "Jacob Ochino"
+    },
+    "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "WebPage",
+                "name": "Football Tips",
+                "url": "https://jakom410.github.io/surebets/tips.html"
+            },
+            {
+                "@type": "WebPage",
+                "name": "About Sure Bets",
+                "url": "https://jakom410.github.io/surebets/about.html"
+            }
+        ]
+    }
+}
