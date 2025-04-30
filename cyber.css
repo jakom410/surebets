@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a2e);
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #ff00ff;
+}
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00f7ff;
+}
+nav {
+    margin: 15px 0;
+}
+.neon-link {
+    color: #00f7ff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    text-shadow: 0 0 5px #00f7ff;
+    transition: all 0.3s;
+}
+.neon-link:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+h2 {
+    font-size: 1.8em;
+    text-shadow: 0 0 10px #00f7ff;
+}
+.cyber-text {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    text-shadow: 0 0 5px #ffffff;
+}
+.highlight {
+    color: #ff00ff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff00ff;
+}
+.cyber-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff00ff;
+    color: #000;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 2px solid #00f7ff;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 10px #ff00ff;
+    transition: all 0.3s;
+}
+.cyber-button:hover {
+    background: #00f7ff;
+    color: #fff;
+    box-shadow: 0 0 20px #00f7ff;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid #00f7ff;
+    font-size: 0.9em;
+}
+footer a {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff;
+}
+.neon-text {
+    animation: flicker 3s infinite alternate;
+}
+.glitch {
+    position: relative;
+}
+.glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #ff00ff;
+}
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #00f7ff;
+    animation: glitch 0.3s infinite linear alternate-reverse;
+}
+.glitch::after {
+    left: -2px;
+    text-shadow: 2px 0 #ff00ff;
+    animation: glitch 0.3s infinite linear alternate;
+}
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #00f7ff;
+    }
+    20%, 24%, 55% {
+        opacity: 0.8;
+        text-shadow: none;
+    }
+}
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1em;
+    }
+    main {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    .cyber-text {
+        font-size: 0.9em;
+    }
+    .cyber-button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+}
